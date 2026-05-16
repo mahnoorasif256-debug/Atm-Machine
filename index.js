@@ -174,7 +174,7 @@ Swal.fire({
 });
 
 
-} else if(inputt > 500000 ){
+} else if(inputt > 500000 || isNaN(inputt)){
 Swal.fire({
   icon: "error",
   title: "Transaction Failed",

@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=BBH+Bartle&family=Boldonse&family=Bungee&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Geom:ital,wght@0,300..900;1,300..900&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+US+Trad+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: clamp(0.75rem, 3vw, 1.5rem);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edd4fa;
+    background: linear-gradient(17deg, rgba(237, 212, 250, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Work Sans", sans-serif;
+}
+
+.cont {
+    width: 57%;
+    height: 551px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border: 1.5px solid #D1C4E9;
+    background-color: #B19CD9;
+    display: block;
+}
+
+.card {
+    background-color: #FFFFFF;
+    height: 535px;
+    width: 83%;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border: 1px solid #F3E5F5;
+}
+
+.text {
+    padding: 8px 20px;
+    background: radial-gradient(circle, rgba(148, 187, 233, 1) 0%, #C358F5 100%);
+}
+
+.mini-card {
+    height: 257px;
+    width: 75%;
+    background: #e4d1ec;
+}
+
+.mini-card img {
+    transform: rotate(-11deg);
+    margin-left: 70px;
+    margin-top: -39px;
+}
+
+.mini-card h1 {
+    margin-top: -80px;
+}
+
+.mini-card .pi {
+    margin-top: -13px;
+}
+
+.line {
+    background-color: #cabeee;
+    height: 40px;
+    width: 37%;
+}
+
+.line2 {
+    background-color: black;
+    height: 5px;
+    width: 73%;
+}
+
+.card-insert img {
+    margin-top: -40px !important;
+}
+
+.btn {
+    margin-top: -70px !important;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #2E51C1 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* //////////////    PIN ///////////*/
+
+.atm-main-card {
+    background-color: #907ab7;
+    width: min(440px, 100%);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: clamp(-1rem, -2.5vh, -0.4rem);
+    height: auto;
+    min-height: 0;
+    padding: clamp(0.5rem, 2vw, 0.85rem) clamp(0.75rem, 3vw, 1.25rem) clamp(0.85rem, 3vw, 1.35rem);
+    box-shadow: -20px -20px 60px #dedef7;
+    border: 2px solid rgba(0, 0, 0, 0.25) !important;
+    display: none;
+}
+
+.atm-main-card > img {
+    width: min(100%, 420px);
+    height: auto;
+    max-height: clamp(100px, 22vw, 180px);
+    object-fit: contain;
+}
+
+.btns-area {
+    background: #fcfcfd;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: clamp(0.5rem, 2vmin, 0.85rem) !important;
+    height: auto !important;
+    min-height: 0;
+    padding: clamp(0.95rem, 2.8vw, 1.35rem) clamp(0.9rem, 3.2vw, 1.5rem) clamp(1rem, 3vw, 1.45rem);
+    flex: 0 1 auto;
+}
+
+.atm-main-card .key1,
+.atm-main-card .key2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: clamp(0.55rem, 2.4vmin, 1.05rem) !important;
+}
+
+.atm-main-card .key1.mt-3 {
+    margin-top: clamp(0.35rem, 1.5vw, 0.75rem) !important;
+}
+
+.ke {
+    background-color: #e4c5f3;
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto !important;
+    max-width: clamp(2.5rem, 11.5vmin, 3.45rem);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: clamp(0.8rem, 2.9vmin, 1.05rem);
+    box-shadow:
+        5px 5px 10px #d1a8e6,
+        -5px -5px 10px #ffffff !important;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ke:hover {
+    transform: scale(0.92);
+    background-color: #d1a8e6;
+    color: white;
+    box-shadow:
+        inset 4px 4px 8px #b892cc,
+        inset -4px -4px 8px #ffffff !important;
+}
+
+/*///////////    cards ////////////// */
+
+.withdraw {
+    background-color: #d38ff3 !important;
+    box-shadow:
+        8px 8px 16px #d1d1d1,
+        -8px -8px 16px #ffffff !important;
+}
+
+.withdraw:hover {
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+}
+
+
+
+/* //////// input amount start */
+
+.amount {
+    background-color: #d38ff3;
+    width: 50% !important;
+    height: 210px;
+    box-shadow:
+        8px 8px 16px #d1d1d1,
+        -8px -8px 16px #ffffff;
+}
+
+.amount2 {
+    background-color: #d38ff3;
+    width: 50% !important;
+    min-height: 280px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btnn:hover {
+    transform: translateY(-3px);
+    background-color: #2E51C1 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* //////// input amount end  */
+
+@media (max-width: 768px) {
+    .atm-main-card {
+        width: min(100%, 380px);
+    }
+
+    .btns-area {
+        padding: clamp(0.85rem, 3vw, 1.15rem) clamp(0.75rem, 3.5vw, 1.15rem) clamp(0.9rem, 3.2vw, 1.2rem);
+        row-gap: clamp(0.45rem, 1.8vmin, 0.75rem) !important;
+    }
+
+    .atm-main-card .key1,
+    .atm-main-card .key2 {
+        gap: clamp(0.5rem, 2.2vmin, 0.9rem) !important;
+    }
+
+    .ke {
+        max-width: clamp(2.35rem, 11vmin, 3.2rem);
+        font-size: clamp(0.76rem, 2.75vmin, 0.96rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .atm-main-card {
+        width: 100%;
+        border-radius: clamp(1rem, 4vw, 1.5rem) !important;
+    }
+
+    .atm-main-card > img {
+        max-height: clamp(88px, 28vw, 140px);
+    }
+
+    .btns-area {
+        padding: clamp(0.75rem, 4vw, 1rem) clamp(0.65rem, 4.5vw, 1rem) clamp(0.85rem, 4vw, 1.1rem);
+        row-gap: clamp(0.4rem, 1.6vmin, 0.65rem) !important;
+    }
+
+    .atm-main-card .key1,
+    .atm-main-card .key1 {
+        gap: clamp(0.5rem, 3.2vw, 0.9rem) !important;
+    }
+
+    .ke {
+        max-width: clamp(2.25rem, 13vw, 3rem);
+        font-size: clamp(0.74rem, 3.4vw, 0.93rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .btns-area {
+        padding: clamp(1rem, 2vw, 1.4rem) clamp(1rem, 2.2vw, 1.55rem) clamp(1.05rem, 2vw, 1.5rem);
+    }
+
+    .atm-main-card .key1,
+    .atm-main-card .key1 {
+        gap: clamp(0.65rem, 1.1vw, 1.1rem) !important;
+    }
+
+    .ke {
+        max-width: clamp(2.85rem, 10vmin, 3.55rem);
+        font-size: clamp(0.86rem, 1.15vw, 1.05rem);
+    }
+}
+
+@media (max-width: 835px) {
+    .amount {
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 508px) {
+    .amount {
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .amount2 {
+        width: 80% !important;
+    }
+}
+
+
+.card-insert{
+     overflow: hidden;
+}
+
+
+
+.movingcard{
+position:absolute;
+z-index: 5;
+left: 0;
+bottom: 0;
+}
+
+
+@keyframes animation{
+70%{
+   transform: translateX(50%);
+        opacity: 1;
+}
+    90%{
+        transform: translateX(75%);
+        opacity: 0.2;
+    }
+
+     100%{
+        transform: translateX(79%);
+        opacity: 0;
+    }
+}
+
+.swipe-card {
+    animation: mySwipe 3s forwards !important;
+}
+
+@keyframes mySwipe {
+    to { transform: translateX(200px); opacity: 0; }
+}
+
+
+
+@media(max-width:835px){
+.cont{
+       width: 97%;
+}
+
+}
+
+@media(max-width:659px){
+
+.mini-card img {
+    margin-left: 20px;
+}
+}
+
+@media(max-width:438px){
+.mini-card img {
+    margin-left: 10px;
+}
+
+}
+
+@media(max-width:685px){
+    .card {
+    width: 99%;
+  
+}
+#btn-insert-card  {
+    margin-top: -20px !important;
+    width: 50% !important;
+}
+
+}
+
+@media(max-width:398px){
+
+.mini-card h1 {
+    margin-top: -40px;
+}
+.mini-card img {
+    margin-top: -9px;
+}
+
+}
+
+
+@media(max-width:700px){
+.cont {
+    height: 651px;
+   
+}
+
+.card {
+    height: 635px;
+
+}
+
+ 
+.card-insert {
+    display: flex !important;
+    flex-direction: column !important; 
+    align-items: center !important;    
+    justify-content: center !important;
+    overflow: hidden; 
+   
+}
+.line {
+    width: 77%; 
+    z-index: 10;
+    order: 2;
+    margin-top: -30px !important;
+    padding: 20px !important;
+}
+.card-insert img {
+    margin-top: 10px !important;
+      width: 200px; 
+    height: auto ;
+    order: 1; 
+    z-index: 5;
+}
+.line2 {
+    width: 93%;
+margin: auto !important;
+}
+#btn-insert-card{
+    margin-top: -20px !important;
+}
+
+@keyframes mySwipe {
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    60% {
+        transform: translateY(110px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(150px); 
+        opacity: 0;
+    }
+}
+
+
+
+.swipe-card {
+    animation: mySwipe 3s forwards !important;
+}
+}
+
+
+
+
+@media(max-width:700px){
+#enter-pin{
+  
+     margin-top: -20px !important;
+       width: 50% !important;
+}
+}

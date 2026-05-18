@@ -108,6 +108,15 @@ if (inputw === "" || isNaN(inputw)) {
     }
 
 
+let currentbalance = parseInt(sessionStorage.getItem('totalbalance')) || 50000;
+
+let withdrawamount = parseInt(inputw);
+
+let newbalance = currentbalance - withdrawamount;
+sessionStorage.setItem('totalbalance' , newbalance);
+
+
+
     if(inputw > 500000 ){
 Swal.fire({
   icon: "error",
@@ -162,6 +171,14 @@ function tran(){
     let inputt = document.querySelector(".transinput").value;
 
     let acc = document.querySelector(".accnum").value;
+
+
+let currentbalance = parseInt(sessionStorage.getItem('totalbalance')) || 50000;
+
+let transamount = parseInt(inputt);
+
+let newbalance = currentbalance - transamount;
+sessionStorage.setItem('totalbalance' , newbalance);
 
 
 if(acc === "" || isNaN(acc) || acc.length > 5 ){
@@ -240,6 +257,14 @@ if (inputd === "" || isNaN(inputd)) {
     }
 
 
+let currentbalance = parseInt(sessionStorage.getItem('totalbalance')) || 50000;
+
+let depoamount = parseInt(inputd);
+
+let newbalance = currentbalance + depoamount;
+sessionStorage.setItem('totalbalance' , newbalance);
+
+
     if(inputd > 500000 ){
 Swal.fire({
   icon: "error",
@@ -285,10 +310,14 @@ successSound.volume = 1.0;
 // ////////////////  check balance  start ////////////////////
 
 
+
 function balance(){
+
+let currentbalance = parseInt(sessionStorage.getItem('totalbalance')) || 50000;
+
      Swal.fire({
     title: "Available Balance:",
-    html: '<span style="color: #2ecc71; font-size: 22px;">Rs. 500,000</span>',
+    html: `<span style="color: #2ecc71; font-size: 22px;">Rs. ${currentbalance}</span>`,
     confirmButtonColor: "#6366f1",
    imageUrl: './images/money.png',
   imageWidth: 160, 
